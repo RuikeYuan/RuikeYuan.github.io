@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruike Yuan — Software, Data &amp; AI Engineer</title>
+  <meta name="description" content="Ruike Yuan — Software Engineer, Data Engineer and AI Engineer based in the Netherlands. Backend, cloud, data pipelines and applied ML." />
+  <meta property="og:title" content="Ruike Yuan — Software, Data & AI Engineer" />
+  <meta property="og:description" content="Backend, cloud, data pipelines and applied ML. Based in the Netherlands, open to work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">ruike<span>.yuan</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="status"><span class="dot"></span>Open to work · Netherlands · On-site / Hybrid / Remote</p>
+          <h1>Hi, I'm <span class="accent">Ruike Yuan</span>.</h1>
+          <p class="aka">a.k.a. Rick · Ricky · Keke — Den Haag 🇳🇱</p>
+          <p class="role">Software Engineer · Data Engineer · AI Engineer</p>
+          <p class="lead">
+            I build backend systems, cloud platforms and data pipelines — and increasingly,
+            the structure around AI models that makes them useful in real software.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="https://www.linkedin.com/in/ruike-yuan-9a137324b/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/RuikeYuan" target="_blank" rel="noopener">GitHub</a>
+            <!-- To show a CV button: add resume.pdf next to index.html and uncomment
+            <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Download CV</a> -->
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="term">
+            <div class="term-bar"><i></i><i></i><i></i><span>~/ruike</span></div>
+            <pre><code><span class="c-k">const</span> ruike = {
+  location: <span class="c-s">"The Randstad, NL"</span>,
+  study: <span class="c-s">"BSc Data Science &amp; AI @ Leiden"</span>,
+  focus: [<span class="c-s">"backend"</span>, <span class="c-s">"cloud"</span>, <span class="c-s">"data"</span>, <span class="c-s">"LLM systems"</span>],
+  stack: [<span class="c-s">"TypeScript"</span>, <span class="c-s">"Spring Boot"</span>, <span class="c-s">"Python"</span>,
+          <span class="c-s">"Docker"</span>, <span class="c-s">"Kubernetes"</span>, <span class="c-s">"GCP"</span>],
+  languages: [<span class="c-s">"中文"</span>, <span class="c-s">"English"</span>, <span class="c-s">"Nederlands"</span>],
+  openToWork: <span class="c-k">true</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="container stats reveal">
+        <div><strong>1 yr+</strong><span>Backend dev in production SaaS</span></div>
+        <div><strong>8.5</strong><span>Bachelor's thesis grade</span></div>
+        <div><strong>3rd</strong><span>Ariel-Inverse Hackathon 2026</span></div>
+        <div><strong>8.0</strong><span>GPA, Leiden University</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">01 · About</p>
+          <h2>Engineer at the intersection of software, data and AI.</h2>
+        </div>
+        <div class="reveal">
+          <p>
+            I'm a software and data engineer specializing in backend systems, cloud platforms and
+            scalable software. At <strong>Denovit</strong> I built and maintained backend services for
+            customer-facing SaaS products, implemented CRM and payment integrations, optimized
+            performance and contributed to CI/CD pipelines for reliable deployments.
+          </p>
+          <p>
+            Alongside work I study <strong>Data Science &amp; Artificial Intelligence at Leiden
+            University</strong>. My thesis explored how LLMs can be grounded in UML models to generate
+            usable user interfaces — which taught me that building AI systems is mostly about designing
+            the structure around the model: what to feed it, how to constrain it, and how to validate it.
+          </p>
+          <p>
+            Fluent in Chinese and English, I enjoy working in cross-functional teams to ship robust,
+            data-driven solutions.
+          </p>
+          <div class="skills">
+            <div>
+              <h4>Languages</h4>
+              <ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>Python</li><li>SQL</li><li>PHP</li><li>C++</li></ul>
+            </div>
+            <div>
+              <h4>Backend &amp; Data</h4>
+              <ul class="tags"><li>Spring Boot</li><li>Node.js</li><li>FastAPI</li><li>Django</li><li>REST APIs</li><li>MongoDB</li><li>MySQL</li><li>Redis</li></ul>
+            </div>
+            <div>
+              <h4>Cloud, DevOps &amp; Hardware</h4>
+              <ul class="tags"><li>Docker</li><li>Kubernetes</li><li>Google Cloud</li><li>Azure AKS</li><li>CI/CD</li><li>ROS</li><li>ESP32 / Arduino</li></ul>
+            </div>
+            <div>
+              <h4>AI / ML</h4>
+              <ul class="tags"><li>LLMs</li><li>PyTorch</li><li>Transformers</li><li>Graph Neural Networks</li><li>Model-Driven Engineering</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <p class="eyebrow reveal">02 · Experience</p>
+        <h2 class="reveal">Where I've worked</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <div class="tl-meta">
+              <span class="date">Mar 2024 – Mar 2025</span>
+              <span class="place">The Hague, NL · On-site</span>
+            </div>
+            <div class="tl-body">
+              <h3>Backend Developer <span class="at">@ Denovit</span> <span class="badge">Part-time</span></h3>
+              <ul>
+                <li>Built and maintained backend services for customer-facing SaaS products, turning business requirements into secure, scalable APIs and integrations.</li>
+                <li>Developed CRM modules with workflow automation and data synchronization to support end-to-end user journeys.</li>
+                <li>Implemented payment/subscription connectors (Mollie, Chargebee) including webhooks, reconciliation and failure/retry flows.</li>
+                <li>Improved performance and reliability with Redis caching/session patterns, query optimization and proactive monitoring; resolved production issues and reduced recurring defects.</li>
+                <li>Contributed to CI/CD foundations (build, test, deploy), improving release consistency and cutting manual deployment effort.</li>
+                <li>Worked with frontend and product stakeholders on specs, code reviews, automated testing and documentation.</li>
+              </ul>
+              <ul class="tags small"><li>REST APIs</li><li>TypeScript</li><li>Spring Boot</li><li>MongoDB</li><li>Redis</li><li>Docker</li><li>CI/CD</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">03 · Projects</p>
+        <h2 class="reveal">Selected work</h2>
+        <div class="filters reveal" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="ai">AI / ML</button>
+          <button class="chip" data-filter="data">Data &amp; Cloud</button>
+          <button class="chip" data-filter="se">Software Eng.</button>
+        </div>
+
+        <div class="grid" id="projectGrid">
+          <article class="card featured reveal" data-tags="ai se">
+            <div class="card-head">
+              <span class="kind">Bachelor's Thesis · Leiden University</span>
+              <span class="score">Grade 8.5</span>
+            </div>
+            <h3>AI-driven Smart UI Generation from UML Models</h3>
+            <p>
+              A working prototype that integrates LLMs into Model-Driven Engineering. Instead of asking an
+              LLM to generate an interface from scratch, UML models are first turned into structured interface
+              metadata, refined by an LLM, and compiled into a runnable web app — keeping AI output grounded
+              in the software design.
+            </p>
+            <div class="pipeline" aria-label="Pipeline">
+              <span>UML models</span><b>→</b><span>Interface metadata</span><b>→</b><span>LLM refinement</span><b>→</b><span>UI spec</span><b>→</b><span>Web prototype</span>
+            </div>
+            <ul class="tags small"><li>LLMs</li><li>Model-Driven Eng.</li><li>UML</li><li>Web</li><li>Human-in-the-loop</li></ul>
+            <p class="foot">Supervised by Guus Ramackers &amp; Jan van Rijn · 2026</p>
+          </article>
+
+          <article class="card reveal" data-tags="ai data">
+            <div class="card-head">
+              <span class="kind">Hackathon · Groningen 2026</span>
+              <span class="score">🥉 3rd place</span>
+            </div>
+            <h3>Exoplanet Atmosphere Retrieval</h3>
+            <p>
+              Team TOI-700-d at the Ariel-Inverse Hackathon. In two days we predicted exoplanet atmospheric
+              properties from spectral data — an inverse modelling problem central to the Ariel Space Mission —
+              using a Transformer + ResNet model with multidimensional spectral features, auxiliary inputs and
+              data augmentation. ~61% accuracy.
+            </p>
+            <ul class="tags small"><li>PyTorch</li><li>Transformer</li><li>ResNet</li><li>Data augmentation</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/ariel-inverse-modeling" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="ai data">
+            <div class="card-head">
+              <span class="kind">Hackathon · hackaway.xyz Amsterdam</span>
+            </div>
+            <h3>Real-time GraphSAGE Fraud Detection</h3>
+            <p>
+              End-to-end fraud detection workflow targeting money laundering and account draining. GraphSAGE
+              generalizes to unseen accounts. I owned the data pipeline and tech-stack direction.
+            </p>
+            <ul class="arch">
+              <li><code>Redis</code> stream &amp; replay of transactions</li>
+              <li><code>Data layer</code> builds a dynamic graph from the stream</li>
+              <li><code>Model layer</code> GraphSAGE fraud scoring</li>
+              <li><code>Agent layer</code> AI analysis &amp; dashboard</li>
+            </ul>
+            <ul class="tags small"><li>GNN</li><li>FastAPI</li><li>Redis</li><li>Docker</li><li>Azure AKS</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/fraud-detection-data-api" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="ai data">
+            <div class="card-head">
+              <span class="kind">Applied ML</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>PartVision</h3>
+            <p>Recognises car parts from a photo and routes each one to auto-accept, confirm-from-top-3, manual or unknown. Combines a ResNet classifier with a cosine kNN index for open-set detection; every human confirmation becomes training data, and a retrained model is promoted only if it beats the current one on a fixed holdout.</p>
+            <ul class="arch"><li><code>v001</code> 93.6% holdout top-1</li><li><code>v002</code> 94.2% after feedback retrain</li></ul>
+            <ul class="tags small"><li>PyTorch</li><li>ResNet</li><li>kNN</li><li>Open-set</li><li>Human-in-the-loop</li><li>SQLite</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/partvision" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="ai se">
+            <div class="card-head">
+              <span class="kind">AI agent</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>re:part — Automotive Operations Agent</h3>
+            <p>Operations assistant for car-dismantling teams: identifies parts, checks compatibility, searches SQL inventory, detects duplicates, prices and drafts listings. One agent, eight reusable skills, typed deterministic tools — and every consequential action goes through human approval.</p>
+            <ul class="tags small"><li>AI agents</li><li>FastAPI</li><li>PostgreSQL</li><li>Docker Compose</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/automotive-operations-agent" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="ai se data">
+            <div class="card-head">
+              <span class="kind">AI product · MVP</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>HollaLink — Dutch Business Navigator</h3>
+            <p>AI business advisor for Chinese entrepreneurs opening a business in the Netherlands: RAG chat over a curated knowledge base (tax, horeca, immigration, location), cost calculator, report generation and admin console. Switchable LLM providers.</p>
+            <ul class="tags small"><li>Next.js</li><li>FastAPI</li><li>RAG</li><li>Chroma</li><li>PostgreSQL</li><li>Gemini</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/HollaLink" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se data">
+            <div class="card-head">
+              <span class="kind">SaaS</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>OpsPilot</h3>
+            <p>Application-maintenance workspace for small software studios: client and project onboarding, incident handling, release verification and reporting, with isolated per-account workspaces and browser-based business checks.</p>
+            <ul class="tags small"><li>Python</li><li>SaaS</li><li>PostgreSQL</li><li>Incident mgmt</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/ops-pilot" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se ai">
+            <div class="card-head">
+              <span class="kind">App</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>DutchFlow — Dutch Frequency Trainer</h3>
+            <p>Vocabulary app built on word-frequency data: search, personal word lists, flashcards, speech synthesis and an AI conversation partner for spoken practice. CI deploys to Vercel; packaged for iOS with Capacitor.</p>
+            <ul class="tags small"><li>TypeScript</li><li>React</li><li>Vite</li><li>Capacitor</li><li>Vercel</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/dutchflow" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="ai">
+            <div class="card-head">
+              <span class="kind">Generative AI</span>
+              <span class="date-sm">2026</span>
+            </div>
+            <h3>Guzheng Music Generator</h3>
+            <p>Fine-tuning Meta's MusicGen on Guzheng recordings to generate music in the style of this traditional Chinese instrument, with pitch-shift and time-stretch augmentation.</p>
+            <ul class="tags small"><li>MusicGen</li><li>Audio ML</li><li>Python</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/Guzheng-music-generator" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se ai">
+            <div class="card-head">
+              <span class="kind">Research project · LIACS</span>
+              <span class="date-sm">Feb – Jun 2025</span>
+            </div>
+            <h3>AI4MDE — Reverse Engineering</h3>
+            <p>
+              AI4MDE is an open-source LIACS research platform bridging AI and Model-Driven Engineering. This
+              project imports an existing Django prototype into the framework, analyzes its structure and
+              outputs UML diagrams so developers can understand, document and extend the software.
+            </p>
+            <ul class="tags small"><li>Django</li><li>UML</li><li>Static analysis</li><li>MDE</li></ul>
+          </article>
+
+          <article class="card reveal" data-tags="se">
+            <div class="card-head">
+              <span class="kind">NHL Stenden</span>
+              <span class="date-sm">2022</span>
+            </div>
+            <h3>Battle Bot</h3>
+            <p>An ESP32-based autonomous and remote-controlled robot built from scratch, with code for line tracking, maze solving, racing and capture-the-flag competitions.</p>
+            <ul class="tags small"><li>C++</li><li>ESP32</li><li>Arduino</li><li>STM32</li><li>Embedded</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/BattleBot" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se">
+            <div class="card-head">
+              <span class="kind">Robotics</span>
+            </div>
+            <h3>Hotel Navigation Robot — Web Control</h3>
+            <p>A Django control panel for a hotel navigation robot, talking to the robot over ROS (Robot Operating System) sockets.</p>
+            <ul class="tags small"><li>Django</li><li>ROS</li><li>Python</li><li>Robotics</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/Hotel-Navigation-Robot-Web-Control" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se data">
+            <div class="card-head">
+              <span class="kind">Web platform</span>
+              <span class="date-sm">2024</span>
+            </div>
+            <h3>Metal &amp; Crypto Trading Platform</h3>
+            <p>Secure web application for trading precious metals and cryptocurrencies, with real-time pricing and analytics.</p>
+            <ul class="tags small"><li>JavaScript</li><li>Real-time data</li><li>Web security</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/Crypto-And-Metal-Trading-Platform" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se">
+            <div class="card-head">
+              <span class="kind">NHL Stenden</span>
+              <span class="date-sm">2022</span>
+            </div>
+            <h3>ServiceIT</h3>
+            <p>IT service management and workflow automation platform where users report and track issues with purchased products.</p>
+            <ul class="tags small"><li>PHP</li><li>MySQL</li><li>Workflow automation</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/ServiceIT" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se">
+            <div class="card-head">
+              <span class="kind">E-commerce</span>
+            </div>
+            <h3>Nozamart</h3>
+            <p>E-commerce platform for electronics and innovative devices: product browsing, shopping cart and checkout.</p>
+            <ul class="tags small"><li>PHP</li><li>MySQL</li><li>E-commerce</li></ul>
+            <div class="links"><a href="https://github.com/RuikeYuan/Nozamart" target="_blank" rel="noopener">Source ↗</a></div>
+          </article>
+
+          <article class="card reveal" data-tags="se">
+            <div class="card-head">
+              <span class="kind">Hobby</span>
+              <span class="date-sm">2017</span>
+            </div>
+            <h3>DIY 3D Printer</h3>
+            <p>Custom-built 3D printer driven by Arduino and Marlin firmware — where the hardware itch started.</p>
+            <ul class="tags small"><li>Arduino</li><li>Marlin</li><li>Hardware</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <p class="eyebrow reveal">04 · Education &amp; Certifications</p>
+        <h2 class="reveal">Background</h2>
+        <div class="edu-grid">
+          <div class="edu reveal">
+            <span class="date">Sep 2023 – Aug 2026</span>
+            <h3>Leiden University</h3>
+            <p>BSc Data Science &amp; Artificial Intelligence</p>
+            <p class="muted">GPA 8.0 / 10 · Thesis 8.5</p>
+          </div>
+          <div class="edu reveal">
+            <span class="date">Sep 2021 – Jul 2023</span>
+            <h3>NHL Stenden</h3>
+            <p>Bachelor of IT, Computer Software Engineering</p>
+            <p class="muted">GPA 7.5 / 10 · Propedeuse diploma (Jul 2023)</p>
+          </div>
+          <div class="edu reveal">
+            <span class="date">Aug 2022</span>
+            <h3>IELTS · British Council</h3>
+            <p>Listening 8.0 · Speaking 7.5 · Reading 6.5 · Writing 6.0</p>
+          </div>
+          <div class="edu reveal">
+            <span class="date">Languages</span>
+            <h3>Trilingual-ish</h3>
+            <p>Chinese — native<br />English — full professional<br />Dutch — elementary</p>
+          </div>
+          <div class="edu reveal">
+            <span class="date">Off the keyboard</span>
+            <h3>Hobbies</h3>
+            <p>Go (and the game &amp; graph theory behind it), chess, football, swimming, VRChat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">05 · Recommendations</p>
+        <h2 class="reveal">What people say</h2>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <blockquote>
+              “He's easily one of the most reliable engineers I've worked with. He has a really strong blend
+              of software engineering and data skills — super solid with backend setup, databases, and keeping
+              cloud workflows running smoothly. Whenever we hit a tough technical spot or needed clean,
+              dependable code, Ruike was the person who'd just step up and get it done.”
+            </blockquote>
+            <figcaption><strong>Zhipei Qin</strong><span>AI Engineer Contractor at Apple · teammate</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>
+              “I had the pleasure to supervise Rick during his Bachelor Thesis at Leiden University. He
+              researched the application of LLMs for Model Driven User Interface design. Rick proved himself
+              to be a dedicated and hardworking student.”
+            </blockquote>
+            <figcaption><strong>Guus Ramackers</strong><span>Assistant Professor, AI for System Modelling &amp; MDE · thesis supervisor</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container reveal">
+        <p class="eyebrow">06 · Contact</p>
+        <h2>Let's build something.</h2>
+        <p class="lead">Open to Software, Data and AI Engineering roles in the Netherlands — on-site, hybrid or remote.</p>
+        <div class="cta center">
+          <a class="btn primary" href="mailto:r.yuan.3@umail.leidenuniv.nl">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/ruike-yuan-9a137324b/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/RuikeYuan" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Ruike Yuan · Built with plain HTML, CSS &amp; JS</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
