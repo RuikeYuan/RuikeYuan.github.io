@@ -202,6 +202,9 @@ h3 { font-size: 19px; letter-spacing: -0.01em; line-height: 1.35; }
 .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .edu { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
 .edu h3 { margin: 6px 0 4px; }
+.edu-grid.two { grid-template-columns: repeat(2, 1fr); }
+.sub { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; margin: 0 0 14px; }
+.edu-grid + .sub { margin-top: 36px; }
 .edu p { font-size: 14px; color: var(--muted); }
 
 /* QUOTES */
@@ -244,7 +247,7 @@ h3 { font-size: 19px; letter-spacing: -0.01em; line-height: 1.35; }
   .nav-links a { padding: 14px 16px; border-top: 1px solid var(--border); }
   .hero { padding-top: 56px; }
   .section { padding: 72px 0; }
-  .grid, .quotes, .edu-grid, .skills { grid-template-columns: 1fr; }
+  .grid, .quotes, .edu-grid, .edu-grid.two, .skills { grid-template-columns: 1fr; }
   .timeline > li { padding-left: 22px; }
   .term pre { font-size: 12px; }
 }
